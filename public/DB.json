@@ -1,0 +1,76 @@
+{
+    "burger" : [ {
+      "id" : 1,
+      "img" : "/menu/js-burger.png",
+      "name" : "JS Burger",
+      "price" : 250,
+      "toppings" : [ "Бекон", "Кетчуп", "Сыр Чеддер", "Красный лук", "Огурцы", "Помидор", "Халапеньо" ]
+    }, {
+      "id" : 2,
+      "img" : "/menu/borsh-burger.png",
+      "name" : "Borsh Burger",
+      "price" : 499.9,
+      "toppings" : [ "Бекон", "Красный лук", "Свекла", "Кимчи", "Халапеньо" ]
+    }, {
+      "id" : 3,
+      "img" : "/menu/freckles-burger.png",
+      "name" : "Freckles Burger",
+      "price" : 350,
+      "toppings" : [ "Ананас", "Майонец", "Кетчуп", "Кетчунез", "Оливки", "Картофель фри", "Морковь" ]
+    }, {
+      "id" : 4,
+      "img" : "/menu/black-burger.png",
+      "name" : "Timon Burger",
+      "price" : 150,
+      "toppings" : [ "Болгарский перец", "Тату на булке" ]
+    }, {
+      "id" : 5,
+      "img" : "/menu/react-burger.png",
+      "name" : "React Burger",
+      "price" : 299.9,
+      "toppings" : [ "Кетчуп", "Сыр Чеддер", "Красный лук", "Огурцы", "Халапеньо" ]
+    }, {
+      "id" : 6,
+      "img" : "/menu/sun-burger.png",
+      "name" : "Sun Burger",
+      "price" : 200,
+      "toppings" : [ "Сыр Чеддер", "Красный лук", "Огурцы", "Помидор", "Халапеньо" ]
+    } ],
+    "other" : [ {
+      "choices" : [ "Coca-cola", "Fanta", "Mirinda", "Sprite" ],
+      "id" : 1,
+      "img" : "/menu/soda.png",
+      "name" : "Coka",
+      "price" : 50
+    }, {
+      "choices" : [ "Черный", "Улун", "Зеленый", "Пуэр" ],
+      "id" : 2,
+      "img" : "/menu/tea.png",
+      "name" : "Чайкофф",
+      "price" : 70
+    }, {
+      "choices" : [ "Классика", "Дольки", "В мундире" ],
+      "id" : 3,
+      "img" : "/menu/french-fries.png",
+      "name" : "Лукошко Фри",
+      "price" : 75
+    }, {
+      "choices" : [ "Филе", "Окорочка", "Крылья" ],
+      "id" : 4,
+      "img" : "/menu/nuggets.png",
+      "name" : "Нагиевцы",
+      "price" : 100
+    }, {
+      "choices" : [ "Эспрессо", "Доппио", "Ристретто", "Американо", "Лунго", "Макиато", "Латте", "Гляссе", "Капучино", "Раф" ],
+      "id" : 5,
+      "img" : "/menu/coffee.png",
+      "name" : "Кофе",
+      "price" : 150
+    }, {
+      "id" : 6,
+      "img" : "/menu/green-coffee.png",
+      "name" : "Гринч",
+      "price" : 175.25
+    } ]
+  }
+  

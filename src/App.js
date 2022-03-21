@@ -40,7 +40,15 @@ const getData = () => {
     firebase.database().ref('/')
     .once('value')
     .then(snapshot => {
-      console.log('User data: ', typeof(snapshot.val()));
+      // console.log('User data: ', typeof(snapshot.val()));
+      const element = document.createElement("a");
+      const file = new Blob([JSON.stringify(snapshot.val())], {
+      type: "text/plain"
+      });
+      element.href = URL.createObjectURL(file);
+      element.download = "myFile.json";
+      document.body.appendChild(element);
+      element.click();
     });
     
     
@@ -51,12 +59,12 @@ const getData = () => {
 }
 
 function App() {
+  getData()
   const auth = useAuth(firebase.auth);
   const openItem = useOpenItem();
   const orders = useOrders();
   const orderConfirm = useOrderConfirm();
   useTitle(openItem.openItem);
-  getData()
   return (
     <Context.Provider value={{
       auth,

@@ -51,9 +51,9 @@ export const OrderConfirm = () => {
         <Overlay>
             <Modal>
                 <OrderTitle>{authentication.displayName}</OrderTitle>
-                <Text>Осталось только подтвердить заказ</Text>
+                <Text>Xác nhận thanh toán</Text>
                 <Total>
-                    <span>Итого</span>
+                    <span>Tổng cộng</span>
                     <TotalPrice>{formatCurrency(total)}</TotalPrice>
                 </Total>
                 <ButtonCheckout
@@ -62,7 +62,7 @@ export const OrderConfirm = () => {
                         setOrders([]);
                         setOpenOrderConfirm(false);
                     }}>
-                    Подтвердить
+                    Xác nhận
                 </ButtonCheckout>
             </Modal>
         </Overlay>

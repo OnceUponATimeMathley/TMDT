@@ -36,30 +36,25 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-const getData = () => {
-    firebase.database().ref('/')
-    .once('value')
-    .then(snapshot => {
-      // console.log('User data: ', typeof(snapshot.val()));
-      const element = document.createElement("a");
-      const file = new Blob([JSON.stringify(snapshot.val())], {
-      type: "text/plain"
-      });
-      element.href = URL.createObjectURL(file);
-      element.download = "myFile.json";
-      document.body.appendChild(element);
-      element.click();
-    });
-    
-    
-
-    
-    
-    
-}
+// const getData = () => {
+//     firebase.database().ref('/')
+//     .once('value')
+//     .then(snapshot => {
+//       // console.log('User data: ', typeof(snapshot.val()));
+//       // const element = document.createElement("a");
+//       // const file = new Blob([JSON.stringify(snapshot.val())], {
+//       // type: "text/plain"
+//       // });
+//       // element.href = URL.createObjectURL(file);
+//       // element.download = "myFile.json";
+//       // document.body.appendChild(element);
+//       // element.click();
+//       console.log(snapshot.val());
+//     });    
+// }
 
 function App() {
-  getData()
+  // getData();
   const auth = useAuth(firebase.auth);
   const openItem = useOpenItem();
   const orders = useOrders();

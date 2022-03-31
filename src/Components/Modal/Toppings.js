@@ -21,7 +21,7 @@ const ToppingCheckbox = styled.input`
 export function Toppings({ toppings, checkToppings }) {
     return (
         <>
-            <h3>Добавки</h3>
+            <h3>Topping</h3>
             <ToppingWrap>
                 {toppings.map((item, i) => (
                     <ToppingLabel key={i}>

@@ -67,7 +67,7 @@ export const Order = () => {
     const totalCounter = orders.reduce((result, order) => order.count + result, 0);
     return (
         <OrderStyled>
-            <OrderTitle>Ваш заказ</OrderTitle>
+            <OrderTitle>Danh sách đơn hàng</OrderTitle>
             <OrderContent>
                 {orders.length ?
                     <OrderList>
@@ -78,12 +78,12 @@ export const Order = () => {
                             index={index}
                         />)}
                     </OrderList> :
-                    <EmptyList>Список заказов пуст</EmptyList>}
+                    <EmptyList>Danh sách đơn hàng trống</EmptyList>}
             </OrderContent>
             {orders.length ?
                 <>
                     <Total>
-                        <span>Итого</span>
+                        <span>Tổng cộng</span>
                         <span>{totalCounter}</span>
                         <TotalPrice>{formatCurrency(total)}</TotalPrice>
                     </Total>
@@ -93,7 +93,7 @@ export const Order = () => {
                         } else {
                             logIn();
                         }
-                    }}>Оформить</ButtonCheckout>
+                    }}>Thanh toán</ButtonCheckout>
                 </> :
                 null
             }

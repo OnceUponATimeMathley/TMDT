@@ -23,13 +23,13 @@ export const Menu = () => {
             {res.response ?
                 <>
                     <SectionMenu>
-                        <h2>Бургеры</h2>
+                        <h2>Fast Food</h2>
                         <ListItem
                             itemList={dbMenu.burger}
                         />
                     </SectionMenu>
                     <SectionMenu>
-                        <h2>Закуски / Напитки</h2>
+                        <h2>Drink</h2>
                         <ListItem
                             itemList={dbMenu.other}
                         />

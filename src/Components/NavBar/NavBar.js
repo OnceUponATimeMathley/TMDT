@@ -63,7 +63,7 @@ export const NavBar = () => {
         <NavBarStyled>
             <Logo>
                 <ImgLogo src={logoImg} alt="лого" />
-                <H1>MRDonald's</H1>
+                <H1>CSE Fast Food</H1>
             </Logo>
             {authentication ?
                 <User>
@@ -71,12 +71,12 @@ export const NavBar = () => {
                         <img src={siginImg} alt={authentication.displayName} />
                         <figcaption>{authentication.displayName}</figcaption>
                     </Figure>
-                    <LogOut title='Выйти' onClick={logOut}>X</LogOut>
+                    <LogOut title='logout' onClick={logOut}>X</LogOut>
                 </User> :
                 <Login onClick={logIn}>
                     <Figure>
-                        <img src={siginImg} alt="войти" />
-                        <figcaption>войти</figcaption>
+                        <img src={siginImg} alt="login" />
+                        <figcaption>Đăng nhập</figcaption>
                     </Figure>
                 </Login>
             }

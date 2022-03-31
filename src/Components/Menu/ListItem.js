@@ -51,7 +51,7 @@ export const ListItem = ({ itemList }) => {
                     img={item.img}
                     onClick={() => setOpenItem(item)}>
                     <p>{item.name}</p>
-                    <p>{formatCurrency(item.price)}</p>
+                    <p>{item.price+' VNĐ' }</p>
                 </Item>
             ))}
         </List >

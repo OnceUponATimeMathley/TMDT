@@ -3,7 +3,7 @@ export const totalPriceItems = order => {
     const priceTopping = (order.price * 0.1) * countTopping;
     return (order.price + priceTopping) * order.count;
 };
-export const formatCurrency = value => value.toLocaleString('ru-RU', { style: 'currency', currency: 'RUB' });
+export const formatCurrency = value => value + ' VNĐ';
 export const projection = rules => {
     const keys = Object.keys(rules);
     return obj => keys.reduce((newObj, key) => {

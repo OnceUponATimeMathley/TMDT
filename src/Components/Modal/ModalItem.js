@@ -51,7 +51,7 @@ const HeaderContent = styled.div`
     justify-content: space-between;
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Pacifico', cursive;
+    font-family: Roboto,sans-serif;
 `;
 
 const TotalPriceItem = styled.div`
@@ -107,13 +107,13 @@ export const ModalItem = () => {
                     {openItem.toppings && <Toppings {...toppings} />}
                     {openItem.choices && <Choices {...choices} openItem={openItem} />}
                     <TotalPriceItem>
-                        <span>Цена:</span>
+                        <span>Tổng tiền:</span>
                         <span>{formatCurrency(totalPriceItems(order))}</span>
                     </TotalPriceItem>
                     <ButtonCheckout
                         onClick={isEdit ? editOrder : addToOrder}
                         disabled={order.choices && !order.choice}
-                    >{isEdit ? 'Редактировать' : 'Добавить'}
+                    >{isEdit ? 'Edit' : 'Insert'}
                     </ButtonCheckout>
                 </Content>
             </Modal>

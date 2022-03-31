@@ -50,7 +50,7 @@ export const OrderListItem = ({ order, index, deleteItem }) => {
             <span>{order.count}</span>
             <ItemPrice>{formatCurrency(totalPriceItems(order))}</ItemPrice>
             <TrashButton ref={refDeleteButton} onClick={() => deleteItem(index)} />
-            {topping && <Toppings>Допы: {topping}</Toppings>}
+            {topping && <Toppings>Topping: {topping}</Toppings>}
         </OrderItemStyled>
     )
 };
